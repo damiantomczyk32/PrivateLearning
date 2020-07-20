@@ -21,8 +21,7 @@ namespace CSVReader
             int columns = worksheet.UsedRange.Columns.Count;
             System.Data.DataTable table = new System.Data.DataTable();
             int NFR = 1;
-            
-
+          
             for(int c = 1; c<=columns; c++)
             {
                 string colName = worksheet.Cells[1, c].Text;
